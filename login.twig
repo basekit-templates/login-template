@@ -1,0 +1,47 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- Page Content -->
+<section class="page  page--partners">
+    <div class="hero  hero--partners" id="partner-signup">
+        <div class="hero-partners-content">
+
+            <div class="hero-partners-header">
+                <a href="/" class="hero-partners-logo">
+                    <img src="https://basekit-product.s3-eu-west-1.amazonaws.com/Logos/Go-BK-logo1.svg" alt="Etisalat Login">
+                </a>
+            </div>
+
+            <!-- Hero Item: Form -->
+            <div class="hero-item--module">
+                
+                <div class="container-form">
+                    <div class="partner-form">
+                        <div class="parnter-form-container">
+
+                            <div class="hero-partners-description">
+                                {{widget('content', 'title', { content: '
+                                    <h3>Log in to Etisalat Sitebuilder</h3>
+                                '})|raw}}
+                            </div>
+
+                            <div class="main-form">
+                                {{zone('main')|raw}}
+                                
+                                <footer class="footer-text">
+                                    <a href="/forgotten-password">Forgotten your password?</a>
+                                </footer>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
